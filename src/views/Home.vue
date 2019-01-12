@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+        <loading :active.sync="isLoading" ></loading>
+    </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld,
+  name: 'Home',
+  methods: {
+    init() {
+      this.$http.get().then((response) => {
+          
+      });
+    },
   },
-};
+  computed: {
+    ...mapGetters(['isLoading']),
+  },
+  created() {
+    this.init();
+  },
+}
 </script>
