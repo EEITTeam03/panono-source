@@ -1,7 +1,7 @@
 <template>
     <div>
         <loading :active.sync="isLoading" ></loading>
-        <scene v-if="activeLink" />
+        <scene v-if="previewLink" />
         <thumbnails v-if="!isLoading"/>
     </div>
 </template>
@@ -22,7 +22,7 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(['isLoading', 'doneData', 'activeLink']),
+    ...mapGetters(['isLoading', 'doneData', 'previewLink']),
   },
   components: {
     Thumbnails,
