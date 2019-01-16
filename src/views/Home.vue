@@ -1,6 +1,8 @@
 <template>
     <div>
-        <loading :active.sync="isLoading" ></loading>
+        <div class="loading-box">
+          <loading :active.sync="isLoading" ></loading>
+        </div>
         <scene v-if="previewLink" />
         <thumbnails v-if="!isLoading"/>
     </div>
@@ -33,3 +35,11 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.loading-box{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+</style>
