@@ -12,7 +12,9 @@ export default new Vuex.Store({
     isLoading: false,
     activeId: '',
     selectedUrl: '',
+    previewUrl: '',
     rotatetion: {},
+    position: {},
     data: [],
   },
   mutations: {
@@ -22,9 +24,13 @@ export default new Vuex.Store({
     [DATA_HANDLER](state, data) {
       state.data = data;
     },
-    [SELECTED_URL_HANDLER](state, { desktopUrl, panoramaRotation }) {
+    [SELECTED_URL_HANDLER](state, {
+      desktopUrl, panoramaRotation, thumbnail, position,
+    }) {
       state.selectedUrl = desktopUrl;
       state.rotatetion = panoramaRotation;
+      state.previewUrl = thumbnail;
+      state.position = position;
     },
     [SELECTED_ID_HANDLER](state, { objectId }) {
       state.activeId = objectId;
@@ -68,9 +74,21 @@ export default new Vuex.Store({
     activeLink(state) {
       return state.selectedUrl;
     },
+    previewLink(state) {
+      return state.previewUrl;
+    },
     getRotation(state) {
       const { x, y, z } = state.rotatetion;
       return `${x} ${y} ${z}`;
+    },
+    getPosition(state) {
+      const { x } = state.position;
+      const { y } = state.position;
+      return {
+        x,
+        y,
+        z: -1000,
+      };
     },
   },
 });
