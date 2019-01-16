@@ -2,15 +2,15 @@
   <div class="set-bottom">
     <ul class="bottom-bar" v-if="!isLoading">
       <li class="thumbnail-box"
-      v-for="{desktopUrl, thumbnail, objectId, index, category, panoramaRotation} in doneData"
-      :key="index"
-      @click="clickHandler(objectId, desktopUrl, panoramaRotation, index)">
+      v-for="item in doneData"
+      :key="item.index"
+      @click="clickHandler(item)">
         <div class="inner">
           <div class="thumbnail"
-          :style="{backgroundImage: `url(${thumbnail})`}"
-          :class="{selected: objectId === activeId}">
+          :style="{backgroundImage: `url(${item.thumbnail})`}"
+          :class="{selected: item.objectId === activeId}">
           </div>
-          <span>{{category}}</span>
+          <span>{{item.category}}</span>
         </div>
       </li>
     </ul>
@@ -25,14 +25,9 @@ export default {
     ...mapGetters(['doneData', 'isLoading', 'activeId']),
   },
   methods: {
-    clickHandler(objectId, desktopUrl, panoramaRotation, index) {
-      this.$store.dispatch('changeSelectedId', { objectId });
-      document.querySelector('#image-360').emit('fadeout');
-      setTimeout(() => {
-        this.$store.dispatch('changeSelectedUrl', { desktopUrl, panoramaRotation });
-      }, 1000);
-      //   this.$router.push(`/${this.$route.params.id}/${index}`);
-      console.log(index);
+    clickHandler(item) {
+      this.$store.dispatch('changeSelectedId', item);
+      this.$store.dispatch('changeSelectedUrl', item);
     },
   },
 };
