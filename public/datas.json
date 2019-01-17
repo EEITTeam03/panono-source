@@ -433,7 +433,7 @@
         "58aabb27128fe1006a4a781e": ""
       },
       "data": {
-        "category": "livingroom",
+        "category": "客廳",
         "createdAt": 1479365312000,
         "cubemapFilePath": "2ONDzZD9Dn/panoramas/MYQD_330c571ef036f65ff44c.jpg",
         "cubemapReady": true,
@@ -855,6 +855,210 @@
         "stereoUrl": "",
         "thumbnail": "https://vrcam-10065475.image.myqcloud.com/6ef34991e3b5821d5a45.jpg?imageView2/2/w/180/h/90/q/100/format/png",
         "updatedAt": 1508902751000
+      }
+    }
+  },
+  "rangeRover": {
+    "3eaca391-84fb-44e0-a348-e1ff68476608": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "2e4a460c-551e-4ca2-a6e7-ded6eaed9d6a": "",
+        "e914f122-fad1-4322-b269-86c5a9397827": ""
+      },
+      "data": {
+        "category": "Förarsäte ",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F3eaca391-84fb-44e0-a348-e1ff68476608%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_NTWWrugtlY.jpg",
+        "floorplanRotation": 0,
+        "index": 1,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F3eaca391-84fb-44e0-a348-e1ff68476608%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_NTWWrugtlY.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "3eaca391-84fb-44e0-a348-e1ff68476608",
+        "panoramaRotation": {
+          "x": -0.11459155902616303,
+          "y": 88.57927512722532,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_NTWWrugtlY.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F3eaca391-84fb-44e0-a348-e1ff68476608%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_NTWWrugtlY.jpg",
+        "updatedAt": 1508337853000
+      }
+    },
+    "5db822f2-1e4d-4124-a748-88ca81c28281": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "3bf94750-bd4e-4737-817b-e95f838865bb": "",
+        "dfb94d44-fe3a-4523-90ae-94a1f5859731": ""
+      },
+      "data": {
+        "category": "Passagerarsäte 2",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F5db822f2-1e4d-4124-a748-88ca81c28281%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_lEeHytRuon.jpg",
+        "floorplanRotation": 0,
+        "index": 2,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F5db822f2-1e4d-4124-a748-88ca81c28281%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_lEeHytRuon.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "5db822f2-1e4d-4124-a748-88ca81c28281",
+        "panoramaRotation": {
+          "x": -0.11459155902616436,
+          "y": 91.10028942580098,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_lEeHytRuon.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F5db822f2-1e4d-4124-a748-88ca81c28281%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_lEeHytRuon.jpg",
+        "updatedAt": 1508337852000
+      }
+    },
+    "70879c28-d10e-4773-ae99-d31d578bc94d": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "6a8cc6c2-5ea2-4bd3-89a0-7dcb8eef3acb": "",
+        "b2ed832b-d095-4595-a7d2-a85ab1ac0776": ""
+      },
+      "data": {
+        "category": "Passagerarsäte 4",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F70879c28-d10e-4773-ae99-d31d578bc94d%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_Bs7pjSYfWF.jpg",
+        "floorplanRotation": 0,
+        "index": 5,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F70879c28-d10e-4773-ae99-d31d578bc94d%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_Bs7pjSYfWF.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "70879c28-d10e-4773-ae99-d31d578bc94d",
+        "panoramaRotation": {
+          "x": 0,
+          "y": 90.98569786677477,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_Bs7pjSYfWF.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F70879c28-d10e-4773-ae99-d31d578bc94d%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_Bs7pjSYfWF.jpg",
+        "updatedAt": 1508337853000
+      }
+    },
+    "824d1061-894d-4ebf-9317-313517b8241a": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "52f20f17-f6da-4494-b073-6fbbb2b8bf08": "",
+        "8edf0f73-32ff-4030-84ec-b01a0aed8762": ""
+      },
+      "data": {
+        "category": "Passagerarsäte 3",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F824d1061-894d-4ebf-9317-313517b8241a%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_CwzT03LaSk.jpg",
+        "floorplanRotation": 0,
+        "index": 3,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F824d1061-894d-4ebf-9317-313517b8241a%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_CwzT03LaSk.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "824d1061-894d-4ebf-9317-313517b8241a",
+        "panoramaRotation": {
+          "x": -0.1145915590261648,
+          "y": 80.32868287734152,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_CwzT03LaSk.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2F824d1061-894d-4ebf-9317-313517b8241a%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_CwzT03LaSk.jpg",
+        "updatedAt": 1508337853000
+      }
+    },
+    "a9e693ed-a28b-4648-b72b-86c5bfd53add": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "0ed32bda-8e75-4cfa-b26d-2dc562aafed6": "",
+        "20e9eb12-e456-4ffc-81de-60f9bc326fea": "",
+        "4a1525f2-b20d-42f7-af9a-51c16da75b03": "",
+        "568c7747-18b5-46aa-a071-3f5ac090b101": "",
+        "c8e12efd-9716-441a-ae7a-490e7798a206": ""
+      },
+      "data": {
+        "category": "Mitt fram",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fa9e693ed-a28b-4648-b72b-86c5bfd53add%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jeU5G63bk6.jpg",
+        "floorplanRotation": 0,
+        "index": 0,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fa9e693ed-a28b-4648-b72b-86c5bfd53add%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jeU5G63bk6.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "a9e693ed-a28b-4648-b72b-86c5bfd53add",
+        "panoramaRotation": {
+          "x": 0,
+          "y": 88.23550045014682,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_jeU5G63bk6.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fa9e693ed-a28b-4648-b72b-86c5bfd53add%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jeU5G63bk6.jpg",
+        "updatedAt": 1508337853000
+      }
+    },
+    "b252ab8e-f849-46b2-bdb9-5a042aa86438": {
+      "Building": "e732e33a-83ab-408c-806a-447c414e6f9a",
+      "Markers": {
+        "a67d3e20-c3cf-4bb4-bb34-743cf718bbcb": "",
+        "b1c039a2-286d-4864-a9ee-946f1526546b": "",
+        "ed802d70-be3e-49f2-abfe-5e352c817405": ""
+      },
+      "data": {
+        "category": "Mitt baksida",
+        "createdAt": 1508337852000,
+        "cubemapReady": false,
+        "desktopUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fb252ab8e-f849-46b2-bdb9-5a042aa86438%2Fweb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jfYJ8gdrt6.jpg",
+        "floorplanRotation": 0,
+        "index": 4,
+        "is720": false,
+        "isTopLogo": false,
+        "mobileUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fb252ab8e-f849-46b2-bdb9-5a042aa86438%2Fapp%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jfYJ8gdrt6.jpg",
+        "name": "b1b7014fb-e37c-4137-9122-142493549841_p0",
+        "objectId": "b252ab8e-f849-46b2-bdb9-5a042aa86438",
+        "panoramaRotation": {
+          "x": 0,
+          "y": -90.41274007164381,
+          "z": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rawUrl": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fpanoramas%2Fpanorama_jfYJ8gdrt6.jpg",
+        "stereoUrl": "",
+        "thumbnail": "https://vrcam-prod-cdn.istaging.com/38230a60-1ff2-4983-b977-25397f232e79%2Fimages%2Fb252ab8e-f849-46b2-bdb9-5a042aa86438%2Fthumb%2F38230a60-1ff2-4983-b977-25397f232e79panoramaspanorama_jfYJ8gdrt6.jpg",
+        "updatedAt": 1508337853000
       }
     }
   }

@@ -3,14 +3,15 @@
         <div class="loading-box">
           <loading :active.sync="isLoading" ></loading>
         </div>
-        <scene v-if="previewLink" />
+        <!-- <scene v-if="previewLink" /> -->
+        <router-view v-if="previewLink"/>
         <thumbnails v-if="!isLoading"/>
     </div>
 </template>
 <script>
 import { mapGetters } from 'vuex';
 import Thumbnails from 'components/Thumbnails.vue';
-import Scene from 'components/Scene.vue';
+// import Scene from 'components/Scene.vue';
 
 export default {
   name: 'home',
@@ -19,7 +20,7 @@ export default {
       if (this.$route.params.id) {
         this.$store.dispatch('getData', this.$route.params.id);
       } else {
-        this.$store.dispatch('getData', 'yocico');
+        this.$store.dispatch('getData', 'hola');
       }
     },
   },
@@ -28,7 +29,7 @@ export default {
   },
   components: {
     Thumbnails,
-    Scene,
+    // Scene,
   },
   created() {
     this.init();
