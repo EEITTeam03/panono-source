@@ -50,10 +50,10 @@ export default {
   transition: background-size 0.5s;
   &:hover{
     background-size: 198px 126px;
-    border-color: #f387a1;
+    border-color: #ffd700;
   }
   &.selected{
-    border-color: #ec0974
+    border-color: #20b2aa;
   }
 }
 

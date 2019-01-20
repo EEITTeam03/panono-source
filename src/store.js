@@ -44,7 +44,7 @@ export default new Vuex.Store({
       dispatch('updateLoading', true);
       axios.get('datas.json').then((response) => {
         const items = response.data[id];
-        console.log(id, response);
+        // console.log(id, response);
         const unSortArray = Object.keys(items).map((value) => {
           const { data } = items[value];
           return data;

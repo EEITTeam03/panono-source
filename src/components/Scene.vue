@@ -2,8 +2,8 @@
     <div>
         <a-scene>
           <a-assets timeout="60000">
-            <img id="origin" :src="activeLink" crossorigin="anonymous">
-            <img id="preview" :src="previewLink" crossorigin="anonymous">
+            <img id="origin" :src="activeLink" crossorigin='anonymous'>
+            <img id="preview" :src="previewLink" crossorigin='anonymous'>
           </a-assets>
           <a-sky id="image-360" src=""
           :animation__rotate="rotateIn"
@@ -23,21 +23,21 @@ export default {
   methods: {
     imgLoading() {
       document.querySelector('#origin').addEventListener('load', () => {
-        console.log('start loading origin');
+        // console.log('start loading origin');
         document.querySelector('#image-360').setAttribute('src', '#origin');
-        console.log('end loading origin');
+        // console.log('end loading origin');
       });
     },
     previewLoading() {
       document.querySelector('#preview').addEventListener('load', () => {
-        console.log('start loading privew');
+        // console.log('start loading privew');
         document.querySelector('#image-360').setAttribute('position', this.getPosition);
         document.querySelector('#image-360').setAttribute('src', '#preview');
         if (document.querySelector('#origin').complete) {
           document.querySelector('#image-360').setAttribute('src', '#origin');
         }
         document.querySelector('#image-360').setAttribute('rotation', this.getRotation);
-        console.log('end loading privew');
+        // console.log('end loading privew');
       });
     },
     firstLoading() {
@@ -51,7 +51,7 @@ export default {
   computed: {
     ...mapGetters(['activeLink', 'getRotation', 'previewLink', 'getPosition']),
     rotateIn() {
-      return `startEvents:rotatein;property:rotation;from:90 0 0;to:${this.getRotation};dur:1000;`;
+      return `startEvents:rotatein;property:rotation;from:90 0 0;to:${this.getRotation};dur:1500;`;
     },
   },
   mounted() {
