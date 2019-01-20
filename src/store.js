@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
 import {
-  LOADING_HANDLER, DATA_HANDLER, SELECTED_URL_HANDLER, SELECTED_ID_HANDLER,
+  LOADING_HANDLER, DATA_HANDLER, SELECTED_URL_HANDLER, SELECTED_ID_HANDLER, ROTATE_STATUS_HANDLER,
 } from './mutation-types';
 
 Vue.use(Vuex);
@@ -16,6 +16,7 @@ export default new Vuex.Store({
     rotatetion: {},
     position: {},
     data: [],
+    isRotating: false,
   },
   mutations: {
     [LOADING_HANDLER](state, status) {
@@ -34,6 +35,9 @@ export default new Vuex.Store({
     },
     [SELECTED_ID_HANDLER](state, { objectId }) {
       state.activeId = objectId;
+    },
+    [ROTATE_STATUS_HANDLER](state, status) {
+      state.isRotating = status;
     },
   },
   actions: {
@@ -60,6 +64,9 @@ export default new Vuex.Store({
     },
     changeSelectedId({ commit }, selected) {
       commit(SELECTED_ID_HANDLER, selected);
+    },
+    changeRotateStatus({ commit }, status) {
+      commit(ROTATE_STATUS_HANDLER, status);
     },
   },
   getters: {
@@ -90,6 +97,13 @@ export default new Vuex.Store({
         y,
         z: -1000,
       };
+    },
+    getRotationY360(state) {
+      const { x, z } = state.rotatetion;
+      return `${x} 360 ${z}`;
+    },
+    getRotateStatus(state) {
+      return state.isRotating;
     },
   },
 });
