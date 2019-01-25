@@ -34,7 +34,6 @@ export default {
         if (document.querySelector('#origin').complete) {
           document.querySelector('#image-360').setAttribute('src', '#origin');
         }
-        // document.querySelector('#image-360').setAttribute('rotation', this.getRotation);
         // 繼續沿著Ｙ軸 360度旋轉
         if (!this.getRotateStatus) {
           document.querySelector('#image-360').emit('rotateY360Resume');
