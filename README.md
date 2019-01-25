@@ -56,7 +56,7 @@ npm run lint
 專案啟動後在 url 加上你的 live tour id
 例: localhost:8081/#/
 
-也可以在 live tour id 後面指定場景 (index 從0開始)
+也可以在 live tour id 後面指定場景 (index 從0開始)  
 例: 
 1. localhost:8081/#/hola
 2. localhost:8081/#/yocico
