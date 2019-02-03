@@ -2,10 +2,10 @@
     <div>
         <a-scene>
           <a-assets timeout="60000">
-            <img id="origin" :src="activeLink" crossorigin='anonymous'>
-            <img id="preview" :src="previewLink" crossorigin='anonymous'>
+            <img id="origin" :src="activeLink" crossorigin='anonymous' ref="origin" />
+            <img id="preview" :src="previewLink" crossorigin='anonymous' ref="preview" />
           </a-assets>
-          <a-sky id="image-360" src=""
+          <a-sky id="image-360" src="" ref="image360"
           :animation__rotate="rotateIn"
           animation__fadein="startEvents:fadein;
           property:material.opacity;from:0.5;to:1;dur:1000;"
@@ -23,39 +23,41 @@ export default {
   name: 'Scene',
   methods: {
     imgLoading() {
-      document.querySelector('#origin').addEventListener('load', () => {
-        document.querySelector('#image-360').setAttribute('src', '#origin');
+      this.$refs.origin.addEventListener('load', () => {
+        // console.log('image loading start');
+        this.$refs.image360.setAttribute('src', '#origin');
+        // console.log('image loading end');
       });
     },
     previewLoading() {
-      document.querySelector('#preview').addEventListener('load', () => {
-        document.querySelector('#image-360').setAttribute('position', this.getPosition);
-        document.querySelector('#image-360').setAttribute('src', '#preview');
-        if (document.querySelector('#origin').complete) {
-          document.querySelector('#image-360').setAttribute('src', '#origin');
+      this.$refs.preview.addEventListener('load', () => {
+        this.$refs.image360.setAttribute('position', this.getPosition);
+        this.$refs.image360.setAttribute('src', '#preview');
+        if (this.$refs.origin.complete) {
+          this.$refs.image360.setAttribute('src', '#origin');
         }
         // 繼續沿著Ｙ軸 360度旋轉
         if (!this.getRotateStatus) {
-          document.querySelector('#image-360').emit('rotateY360Resume');
+          this.$refs.image360.emit('rotateY360Resume');
         }
       });
     },
     firstLoading() {
       // 第一張圖會滑進來
-      document.querySelector('#image-360').addEventListener('materialtextureloaded', () => {
+      this.$refs.image360.addEventListener('materialtextureloaded', () => {
         this.$store.dispatch('updateLoading', false);
-        document.querySelector('#image-360').emit('rotatein');
+        this.$refs.image360.emit('rotatein');
         // 沿著Ｙ軸 360度旋轉
         setTimeout(() => {
           this.$store.dispatch('changeRotateStatus', true);
-          document.querySelector('#image-360').emit('rotateY360');
+          this.$refs.image360.emit('rotateY360');
         }, 2500);
       }, { once: true });
     },
     pauseRotate() {
       document.addEventListener('click', () => {
         this.$store.dispatch('changeRotateStatus', false);
-        document.querySelector('#image-360').emit('rotateY360Pause');
+        this.$refs.image360.emit('rotateY360Pause');
       });
     },
   },
